@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <ImageView
+        android:layout_width="@dimen/Image_size"
+        android:layout_height="@dimen/Image_size"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="40dp"
+        android:id="@+id/contact_photo"
+        android:src="@mipmap/user"/>
+
+    <ImageView
+        android:layout_width="@dimen/Image_label_size"
+        android:layout_height="@dimen/Image_label_size"
+        android:id="@+id/name_img"
+        android:layout_below="@+id/contact_photo"
+        android:src="@mipmap/contact_name"
+        android:layout_marginLeft="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_normal"
+        android:text="王小明"
+        android:layout_alignBottom="@+id/name_img"
+        android:layout_toRightOf="@+id/name_img"
+        android:id="@+id/contact_name"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/Black"
+        android:layout_marginLeft="30dp"/>
+
+    <ImageView
+        android:layout_width="@dimen/Image_label_size"
+        android:layout_height="@dimen/Image_label_size"
+        android:id="@+id/phone_img"
+        android:layout_below="@+id/name_img"
+        android:src="@mipmap/phone"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_normal"
+        android:text="12345678912"
+        android:layout_alignBottom="@+id/phone_img"
+        android:layout_toRightOf="@+id/phone_img"
+        android:id="@+id/phone_num"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/Black"
+        android:layout_marginLeft="30dp"/>
+
+    <ImageView
+        android:layout_width="@dimen/Image_label_size"
+        android:layout_height="@dimen/Image_label_size"
+        android:id="@+id/email_img"
+        android:layout_below="@+id/phone_img"
+        android:src="@mipmap/email"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_normal"
+        android:text="abc@xxx.com"
+        android:layout_alignBottom="@+id/email_img"
+        android:layout_toRightOf="@+id/email_img"
+        android:id="@+id/email"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/Black"
+        android:layout_marginLeft="30dp"/>
+
+
+</RelativeLayout>

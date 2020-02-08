@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:weightSum="1.0"
+        android:layout_margin="10dp">
+        <com.example.huangzilin.contact.Memorandum.ClearEditText
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/clear_input"
+            android:paddingLeft="10dp"
+            android:drawableStart="@drawable/ic_action_search"
+            android:drawableLeft="@drawable/ic_action_search"
+            android:drawablePadding="15dp"
+            android:hint="搜索"
+            android:textSize="15sp"
+            android:background="@drawable/edittext_bg"
+            android:layout_width="0dp"
+            android:layout_weight="0.9"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"/>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/memorandum_listView"
+        android:layout_weight="1"/>
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:background="#dcdcdc"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/persons"
+            style="@style/TabRadioButton"
+            android:drawableTop="@drawable/user"
+            android:text="联系人" />
+
+        <RadioButton
+            android:id="@+id/call_records"
+            style="@style/TabRadioButton"
+            android:drawableTop="@drawable/phone"
+            android:text="通话记录" />
+
+        <RadioButton
+            android:id="@+id/memory"
+            style="@style/TabRadioButton"
+            android:drawableTop="@drawable/book"
+            android:text="备忘录" />
+    </RadioGroup>
+</LinearLayout>

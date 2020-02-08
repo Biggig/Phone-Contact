@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+	<PreferenceCategory>
+        <EditTextPreference
+            android:key="edittext_key"
+            android:defaultValue="https://www.baidu.com"
+            android:inputType="text"
+            android:summary="edit summary"
+            android:title="姓名" />
+        <EditTextPreference
+            android:key="edittext_key1"
+            android:defaultValue="https://www.baidu.com"
+            android:inputType="text"
+            android:summary="edit summary"
+            android:title="本机号码" />
+        <EditTextPreference
+            android:key="edittext_key2"
+            android:defaultValue="https://www.baidu.com"
+            android:inputType="text"
+            android:summary="edit summary"
+            android:title="邮箱" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/add_contact"
+        android:title="add_contact"
+        android:icon="@android:drawable/ic_input_add"
+        app:showAsAction="ifRoom" />
+    <item android:id="@+id/menu1"
+        android:title="二维码"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+    <item android:id="@+id/menu2"
+        android:title="扫描"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+    <item android:id="@+id/menu3"
+        android:title="设置"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+</menu>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Record.StatActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/title"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="时间"
+            android:textColor="#555555"
+            android:textSize="@dimen/text_size_normal"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="@dimen/stat_width"
+            android:layout_height="wrap_content"
+            android:text="通话数"
+            android:textColor="#888888"
+            android:textSize="@dimen/text_size_normal" />
+
+        <TextView
+            android:layout_width="@dimen/stat_width"
+            android:layout_height="wrap_content"
+            android:text="通话时长"
+            android:textColor="#888888"
+            android:textSize="@dimen/text_size_normal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/week"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="星期"
+            android:textColor="#555555"
+            android:textSize="@dimen/text_size_normal"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="@dimen/stat_width"
+            android:layout_height="wrap_content"
+            android:text="25"
+            android:textColor="#888888"
+            android:textSize="@dimen/text_size_normal"
+            android:id="@+id/week_counts"/>
+
+        <TextView
+            android:layout_width="@dimen/stat_width"
+            android:layout_height="wrap_content"
+            android:text="3h24min"
+            android:textColor="#888888"
+            android:textSize="@dimen/text_size_normal"
+            android:id="@+id/week_total_time"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/month"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="月"
+            android:textColor="#555555"
+            android:textSize="@dimen/text_size_normal"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="@dimen/stat_width"
+            android:layout_height="wrap_content"
+            android:text="25"
+            android:textColor="#888888"
+            android:textSize="@dimen/text_size_normal"
+            android:id="@+id/month_counts"/>
+
+        <TextView
+            android:layout_width="@dimen/stat_width"
+            android:layout_height="wrap_content"
+            android:text="3h24min"
+            android:textColor="#888888"
+            android:textSize="@dimen/text_size_normal"
+            android:id="@+id/month_total_time"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/year"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="年"
+            android:textColor="#555555"
+            android:textSize="@dimen/text_size_normal"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="@dimen/stat_width"
+            android:layout_height="wrap_content"
+            android:text="25"
+            android:textColor="#888888"
+            android:textSize="@dimen/text_size_normal"
+            android:id="@+id/year_counts"/>
+
+        <TextView
+            android:layout_width="@dimen/stat_width"
+            android:layout_height="wrap_content"
+            android:text="3h24min"
+            android:textColor="#888888"
+            android:textSize="@dimen/text_size_normal"
+            android:id="@+id/year_total_time"/>
+
+    </LinearLayout>
+
+</LinearLayout>

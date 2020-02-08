@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F4F3F3"
+    tools:context=".Record.RecordActivity">
+
+    <ListView
+        android:id="@+id/callView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scrollbars="vertical"
+        android:visibility="visible"
+        android:layout_weight="1">
+    </ListView>
+    <RadioGroup
+        android:id="@+id/radiogroup_"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:background="#dcdcdc"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/persons_"
+            style="@style/TabRadioButton"
+            android:drawableTop="@drawable/user"
+            android:text="联系人"
+            />
+
+        <RadioButton
+            android:id="@+id/call_records_"
+            style="@style/TabRadioButton"
+            android:drawableTop="@drawable/phone"
+            android:text="通话记录"
+
+            />
+
+        <RadioButton
+            android:id="@+id/memory_"
+            style="@style/TabRadioButton"
+            android:drawableTop="@drawable/book"
+            android:text="备忘录"
+            />
+    </RadioGroup>
+</LinearLayout>

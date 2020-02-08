@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F3F3"
+    android:orientation="vertical" >
+    <!--搜索框-->
+    <FrameLayout
+        android:id="@+id/layoutContainer"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:padding="8dp" >
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/text_field"
+            android:drawableLeft="@drawable/search"
+            android:drawablePadding="4dp"
+            android:hint="点击回车搜索，空搜索显示所有联系人"
+            android:inputType="text"
+            android:lines="1"
+            android:paddingLeft="4dp"
+            android:paddingRight="40dp"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/ivClearText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:padding="4dp"
+            android:src="@drawable/clear_button"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <!--点击字母配图-->
+        <TextView
+            android:id="@+id/dialog"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="30.0dip"
+            android:visibility="invisible" />
+
+        <!--联系人列表-->
+        <ListView
+            android:id="@+id/lv_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#000000"
+            android:divider="#e3e3e3"
+            android:dividerHeight="1.0dp"
+            android:fadingEdge="none"
+            android:scrollbars="none"
+            android:scrollingCache="false"
+            android:visibility="visible"
+            android:layout_marginRight = "30dp"
+        />
+        <!--右侧字母筛选栏-->
+        <com.example.huangzilin.contact.SideBar
+            android:id="@+id/sidebar"
+            android:layout_width="30.0dip"
+            android:layout_height="match_parent"
+
+            android:layout_marginTop = "30dp"
+            android:layout_marginBottom = "55dp"
+            android:layout_gravity="right|center" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:background="#dcdcdc"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/persons"
+                style="@style/TabRadioButton"
+                android:drawableTop="@drawable/user"
+                android:text="联系人" />
+
+            <RadioButton
+                android:id="@+id/call_records"
+                style="@style/TabRadioButton"
+                android:drawableTop="@drawable/phone"
+                android:text="通话记录" />
+
+            <RadioButton
+                android:id="@+id/memory"
+                style="@style/TabRadioButton"
+                android:drawableTop="@drawable/book"
+                android:text="备忘录" />
+        </RadioGroup>
+    </FrameLayout>
+
+
+</LinearLayout>

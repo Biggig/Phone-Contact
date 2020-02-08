@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="姓名"/>
+
+        <EditText
+            android:id="@+id/input_name"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:hint="请填写姓名"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:gravity="top"
+            android:text="号码"/>
+
+        <EditText
+            android:id="@+id/input_number"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:gravity="left|top"
+            android:hint="请填写号码"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="邮箱"/>
+
+        <EditText
+            android:id="@+id/input_email"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:hint="请填写邮箱"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
